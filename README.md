@@ -1,20 +1,13 @@
 # ahm-et718-hr-repo-05142022
 
-
 rails generate model Article title:string text:text
 rails g scaffold Resume name image_url role location email phone
-
-
 
 <%= link_to 'My Blog', controller: 'articles' %>
 <%= link_to 'Resume Database', controller: 'resumes' %>
 
-
-
 rails generate model Comment commenter:string body:text article:references
 rails g model Skill title level resume:references
-
-
 
 
 resources :articles do
@@ -24,8 +17,6 @@ end
 resources :resumes do
   resources :skills
 end
-
-
 
 
 rails generate controller Comments
