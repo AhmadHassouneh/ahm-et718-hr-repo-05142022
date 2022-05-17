@@ -10,6 +10,7 @@ rails g scaffold Resume name image_url role location email phone
 <%= link_to 'Resume Database', controller: 'resumes' %>
 
 
+
 rails generate model Comment commenter:string body:text article:references
 rails g model Skill title level resume:references
 
